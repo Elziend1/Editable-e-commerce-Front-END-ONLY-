@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Aperture | Tools for Focus</title>
+    <meta name="description" content="A modern, Apple-inspired e-commerce storefront featuring a Liquid Glass UI, dynamic search, and a seamless cart experience." />
+
+    <!-- iOS 9 / Legacy Device Fallback -->
+    <script>
+      var ua = navigator.userAgent;
+      if (/iPad|iPhone|iPod/.test(ua)) {
+        var match = ua.match(/OS (\d+)_/);
+        if (match && parseInt(match[1], 10) < 13) {
+          window.location.href = "/legacy.html";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
